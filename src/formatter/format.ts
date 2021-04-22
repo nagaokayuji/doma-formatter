@@ -1,13 +1,13 @@
 import * as vscode from "vscode";
 
 /** formatter */
-export const format = (document: vscode.TextDocument) => {
-  puts(document.getText());
+export const format = (text: string): string => {
+  console.log("called format function");
+  puts(text);
+  return "formatted document hogehoge";
 };
 
-/**
- * for debug
- */
+/** for debug */
 const puts = (value: string) => {
   vscode.window.showInformationMessage(value);
   console.log(value);

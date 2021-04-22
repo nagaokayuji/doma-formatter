@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
-import { format } from "./formatter/parser";
+import { format } from "./formatter/format";
 
 const sqlSelector: vscode.DocumentSelector = [
   { scheme: "file", language: "sql" },
@@ -10,13 +10,23 @@ const sqlSelector: vscode.DocumentSelector = [
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-  // formatter for .sql
   vscode.languages.registerDocumentFormattingEditProvider(sqlSelector, {
     provideDocumentFormattingEdits(
       document: vscode.TextDocument
     ): vscode.ProviderResult<vscode.TextEdit[]> {
-      format(document);
-      return;
+      const text: string = document.getText();
+      console.log(text);
+      const lineEnd: number = document.lineCount - 1;
+      console.log(lineEnd);
+      const start: vscode.Position = new vscode.Position(0, 0);
+      console.log(start);
+      const end: vscode.Position = new vscode.Position(
+        lineEnd,
+        document.lineAt(lineEnd).text.length
+      );
+      console.log(end);
+      const range: vscode.Range = new vscode.Range(start, end);
+      return [vscode.TextEdit.replace(range, format(text))];
     },
   });
 }
