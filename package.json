@@ -1,8 +1,8 @@
 {
   "name": "doma-sql-formatter",
-  "displayName": "doma-sql-formatter",
-  "description": "",
-  "version": "0.0.1",
+  "displayName": "Doma SQL Formatter",
+  "description": "Format sql files for doma framework",
+  "version": "0.0.2",
   "publisher": "nagaokayuji",
   "engines": {
     "vscode": "^1.55.0"
