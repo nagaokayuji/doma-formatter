@@ -11,14 +11,31 @@
     "name": "nagaokayuji"
   },
   "categories": [
-    "Other"
+    "Formatters"
+  ],
+  "keywords": [
+    "sql",
+    "formatter",
+    "mysql",
+    "doma"
   ],
   "activationEvents": [
     "onLanguage:sql"
   ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": []
+    "commands": [],
+    "configuration": {
+      "type": "object",
+      "title": "Doma SQL Formatter",
+      "properties": {
+        "doma-sql-formatter.toUppercase": {
+          "type": "boolean",
+          "default": "true",
+          "description": "Change to uppercase"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
