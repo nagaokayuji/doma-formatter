@@ -2,9 +2,9 @@ import * as vscode from "vscode";
 import * as sqlFormatter from "sql-formatter";
 
 /** formatter */
-export const format = (text: string): string => {
+export const format = (text: string, isUppercase: boolean): string => {
   let formattedText = sqlFormatter.format(text, {
-    uppercase: true,
+    uppercase: isUppercase,
     isDoma: true,
   });
   return formattedText;

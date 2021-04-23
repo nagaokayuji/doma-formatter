@@ -6,6 +6,12 @@ import { format } from "./formatter/format";
 const sqlSelector: vscode.DocumentSelector = [
   { scheme: "file", language: "sql" },
 ];
+const getSettings = () => {
+  const settings: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration(
+    "doma-sql-formatter"
+  );
+  return { toUppercase: settings.get("toUppercase") != false };
+};
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -22,7 +28,9 @@ export function activate(context: vscode.ExtensionContext) {
         document.lineAt(lineEnd).text.length
       );
       const range: vscode.Range = new vscode.Range(start, end);
-      return [vscode.TextEdit.replace(range, format(text))];
+      return [
+        vscode.TextEdit.replace(range, format(text, getSettings().toUppercase)),
+      ];
     },
   });
 }
