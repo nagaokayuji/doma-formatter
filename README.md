@@ -34,6 +34,5 @@ SELECT
 FROM
   employee
 WHERE
-  employee_id =
-  /* employeeId */99
+  employee_id = /* employeeId */99
 ```
