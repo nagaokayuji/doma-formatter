@@ -23,6 +23,7 @@
     "onLanguage:sql"
   ],
   "main": "./out/extension.js",
+  "icon": "static/logo.png",
   "contributes": {
     "commands": [],
     "configuration": {
