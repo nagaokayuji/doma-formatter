@@ -12,6 +12,8 @@ WHERE /*%for name : names */
   employee_name LIKE /* name */'hoge'
   /*%if name_has_next */
   /*# "or" */
+  /*%elseif condition */
+  /*# hogehoge */
   /*%end */
   /*%end*/
 OR salary > 1000
@@ -31,6 +33,8 @@ WHERE
   'hoge'
   /*%if name_has_next */
   /*# "or" */
+  /*%elseif condition */
+  /*# hogehoge */
   /*%end */
   /*%end*/
   OR salary > 1000
@@ -48,6 +52,8 @@ WHERE
     employee_name LIKE /* name */'hoge'
     /*%if name_has_next */
       /*# "or" */
+    /*%elseif condition */
+      /*# hogehoge */
     /*%end */
   /*%end*/
   OR salary > 1000
