@@ -7,10 +7,14 @@ Formats SQL files for [Doma](https://github.com/domaframework/doma).
 Original file:
 
 ```sql
-SELECT *
-FROM employee
-WHERE
-  employee_id = /* employeeId */99
+SELECT * FROM employee
+WHERE /*%for name : names */
+  employee_name LIKE /* name */'hoge'
+  /*%if name_has_next */
+  /*# "or" */
+  /*%end */
+  /*%end*/
+OR salary > 1000
 ```
 
 Other formatter (not works):
@@ -21,9 +25,15 @@ SELECT
 FROM
   employee
 WHERE
-  employee_id =
-  /* employeeId */
-  99
+  /*%for name : names */
+  employee_name LIKE
+  /* name */
+  'hoge'
+  /*%if name_has_next */
+  /*# "or" */
+  /*%end */
+  /*%end*/
+  OR salary > 1000
 ```
 
 This extension:
@@ -34,5 +44,11 @@ SELECT
 FROM
   employee
 WHERE
-  employee_id = /* employeeId */99
+  /*%for name : names */
+    employee_name LIKE /* name */'hoge'
+    /*%if name_has_next */
+      /*# "or" */
+    /*%end */
+  /*%end*/
+  OR salary > 1000
 ```
