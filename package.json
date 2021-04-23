@@ -7,6 +7,9 @@
   "engines": {
     "vscode": "^1.55.0"
   },
+  "author": {
+    "name": "nagaokayuji"
+  },
   "categories": [
     "Other"
   ],
@@ -38,7 +41,13 @@
     "typescript": "^4.1.3",
     "vscode-test": "^1.5.0"
   },
+  "license": "MIT",
   "dependencies": {
     "sql-formatter": "git+https://github.com/nagaokayuji/sql-formatter-doma.git"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nagaokayuji/doma-sql-formatter-vscode.git"
+  },
+  "homepage": "https://github.com/nagaokayuji/doma-sql-formatter-vscode/blob/main/README.md"
 }
