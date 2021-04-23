@@ -3,9 +3,10 @@ import * as sqlFormatter from "sql-formatter";
 
 /** formatter */
 export const format = (text: string): string => {
-  let formattedText = sqlFormatter.format(text, { uppercase: true });
-  console.log("called format function");
-  puts(text);
+  let formattedText = sqlFormatter.format(text, {
+    uppercase: true,
+    isDoma: true,
+  });
   return formattedText;
 };
 

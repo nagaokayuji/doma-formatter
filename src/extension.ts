@@ -15,16 +15,12 @@ export function activate(context: vscode.ExtensionContext) {
       document: vscode.TextDocument
     ): vscode.ProviderResult<vscode.TextEdit[]> {
       const text: string = document.getText();
-      console.log(text);
       const lineEnd: number = document.lineCount - 1;
-      console.log(lineEnd);
       const start: vscode.Position = new vscode.Position(0, 0);
-      console.log(start);
       const end: vscode.Position = new vscode.Position(
         lineEnd,
         document.lineAt(lineEnd).text.length
       );
-      console.log(end);
       const range: vscode.Range = new vscode.Range(start, end);
       return [vscode.TextEdit.replace(range, format(text))];
     },
