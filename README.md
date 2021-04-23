@@ -1,6 +1,6 @@
-# doma-sql-formatter README
+# Doma SQL Formatter ![license](https://img.shields.io/github/license/nagaokayuji/doma-sql-formatter-vscode) ![installs](https://img.shields.io/visual-studio-marketplace/i/nagaokayuji.doma-sql-formatter) ![version](https://img.shields.io/visual-studio-marketplace/v/nagaokayuji.doma-sql-formatter)
 
-Formats SQL files for [Doma](https://github.com/domaframework/doma).
+Formats SQL files for [Doma](https://github.com/domaframework/doma) framework.
 
 ## Features
 
