@@ -1342,7 +1342,7 @@ sprintf-js@~1.0.2:
 
 "sql-formatter@git+https://github.com/nagaokayuji/sql-formatter-doma.git":
   version "4.0.2"
-  resolved "git+https://github.com/nagaokayuji/sql-formatter-doma.git#922c7474511bb15eb554fb48f619bb39db0bec5a"
+  resolved "git+https://github.com/nagaokayuji/sql-formatter-doma.git#5e19c5e5c964dd9f3be460f32ebfeb8badaa1210"
   dependencies:
     argparse "^2.0.1"
 
