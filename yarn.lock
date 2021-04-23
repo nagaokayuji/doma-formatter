@@ -1340,10 +1340,9 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sql-formatter@^4.0.2:
+"sql-formatter@git+https://github.com/nagaokayuji/sql-formatter-doma.git":
   version "4.0.2"
-  resolved "https://registry.yarnpkg.com/sql-formatter/-/sql-formatter-4.0.2.tgz#2b359e5a4c611498d327b9659da7329d71724607"
-  integrity sha512-R6u9GJRiXZLr/lDo8p56L+OyyN2QFJPCDnsyEOsbdIpsnDKL8gubYFo7lNR7Zx7hfdWT80SfkoVS0CMaF/DE2w==
+  resolved "git+https://github.com/nagaokayuji/sql-formatter-doma.git#37c3baad41924b73b3ab2f28d991d6e3de9f625e"
   dependencies:
     argparse "^2.0.1"
 

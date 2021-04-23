@@ -38,6 +38,6 @@
     "vscode-test": "^1.5.0"
   },
   "dependencies": {
-    "sql-formatter": "^4.0.2"
+    "sql-formatter": "git+https://github.com/nagaokayuji/sql-formatter-doma.git"
   }
 }
