@@ -1,7 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
-import { format, TConfig } from "./formatter/format";
+import { format, TConfig, TLanguage } from "./formatter/format";
 
 /** target file */
 const sqlSelector: vscode.DocumentSelector = [
@@ -16,6 +16,7 @@ const getSettings = (options: vscode.FormattingOptions): TConfig => {
   return {
     uppercase: settings.get("toUppercase") !== false,
     indent: options.insertSpaces ? " ".repeat(options.tabSize) : "\t",
+    language: settings.get("dialect") as TLanguage,
   };
 };
 
