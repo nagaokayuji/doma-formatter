@@ -4,6 +4,12 @@ All notable changes to the "doma-sql-formatter" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.9]
+
+### Changed
+
+- Supported multiple dialects.
+
 ## [0.0.8]
 
 ### Changed
