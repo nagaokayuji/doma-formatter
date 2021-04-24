@@ -34,6 +34,24 @@
           "type": "boolean",
           "default": "true",
           "description": "Change to uppercase"
+        },
+        "doma-sql-formatter.dialect": {
+          "scope": "resource",
+          "type": "string",
+          "enum": [
+            "sql",
+            "mysql",
+            "db2",
+            "mariadb",
+            "n1ql",
+            "plsql",
+            "postgresql",
+            "redshift",
+            "spark",
+            "tsql"
+          ],
+          "default": "mysql",
+          "description": "dialect"
         }
       }
     }
