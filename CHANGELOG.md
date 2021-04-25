@@ -4,33 +4,35 @@ All notable changes to the "doma-sql-formatter" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [0.0.9]
+## 0.0.10
+- Updated README & description.
+## 0.0.9
 
 ### Changed
 
 - Supported multiple dialects.
 
-## [0.0.8]
+## 0.0.8
 
 ### Changed
 
 - Updated README.
 
-## [0.0.7](2021/04/24)
+## 0.0.7
 
 ### Changed
 
 - Supported range formatting.
 - Supported editor's tab size.
 
-## [0.0.6](2021/04/24)
+## 0.0.6
 
 ### Changed
 
 - Added logo.
 - Updated README.
 
-## [0.0.5](2021/04/24)
+## 0.0.5
 
 ### Changed
 
@@ -43,7 +45,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Indentation for if/for statements.
 - Examples of README
 
-## [0.0.3]
+## 0.0.3
 
 ### Changed
 
