@@ -2,7 +2,7 @@
   "name": "doma-sql-formatter",
   "displayName": "Doma SQL Formatter",
   "description": "A simple SQL Formatter that supports Doma Framework.",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "publisher": "nagaokayuji",
   "engines": {
     "vscode": "^1.55.0"

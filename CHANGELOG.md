@@ -4,8 +4,18 @@ All notable changes to the "doma-sql-formatter" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.0.11
+
+### Changed
+
+- Added linesBetweenQueries option.
+
 ## 0.0.10
+
+### Changed
+
 - Updated README & description.
+
 ## 0.0.9
 
 ### Changed
