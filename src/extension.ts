@@ -17,6 +17,7 @@ const getSettings = (options: vscode.FormattingOptions): TConfig => {
     uppercase: settings.get("toUppercase") !== false,
     indent: options.insertSpaces ? " ".repeat(options.tabSize) : "\t",
     language: settings.get("dialect") as TLanguage,
+    linesBetweenQueries: settings.get("linesBetweenQueries") || 1,
   };
 };
 

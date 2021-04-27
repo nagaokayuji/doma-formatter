@@ -20,6 +20,7 @@ export type TConfig = {
   uppercase: boolean;
   indent: string;
   language: TLanguage;
+  linesBetweenQueries: number;
 };
 
 /** formatter */
@@ -28,6 +29,7 @@ export const format = (text: string, options: TConfig): string => {
     uppercase: options.uppercase,
     indent: options.indent,
     language: options.language,
+    linesBetweenQueries: options.linesBetweenQueries,
     isDoma: true,
   });
   return formattedText;

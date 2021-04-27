@@ -35,6 +35,11 @@
           "default": "true",
           "description": "Change to uppercase"
         },
+        "doma-sql-formatter.linesBetweenQueries": {
+          "type": "number",
+          "default": 1,
+          "description": "Lines Between Queries"
+        },
         "doma-sql-formatter.dialect": {
           "scope": "resource",
           "type": "string",
