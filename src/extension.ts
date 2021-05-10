@@ -8,8 +8,13 @@ const sqlSelector: vscode.DocumentSelector = [
   { scheme: "file", language: "sql" },
 ];
 
+type TFormattingOptions = {
+  tabSize: number;
+  insertSpaces: boolean;
+};
+
 /** configure format options */
-const getSettings = (options: vscode.FormattingOptions): TConfig => {
+const getSettings = (options: TFormattingOptions): TConfig => {
   const settings: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration(
     "doma-sql-formatter"
   );
@@ -32,6 +37,33 @@ export function activate(context: vscode.ExtensionContext) {
       ),
     ],
   });
+  let disposable: vscode.Disposable = vscode.commands.registerCommand(
+    "doma.forceFormat",
+    () => {
+      const editor = vscode.window.activeTextEditor;
+      if (!editor) {
+        return;
+      }
+      const document = editor.document;
+      const lastLine = document.lineCount - 1;
+
+      const options = {
+        tabSize: editor.options.tabSize as number, // always number
+        insertSpaces: editor.options.insertSpaces as boolean, // always boolean
+      };
+      console.warn(JSON.stringify(options));
+      const range: vscode.Range = new vscode.Range(
+        0,
+        0,
+        lastLine,
+        document.lineAt(lastLine).text.length
+      );
+      // format
+      const result: string = format(document.getText(), getSettings(options));
+      editor.edit((builder) => builder.replace(range, result));
+    }
+  );
+  context.subscriptions.push(disposable);
 }
 
 // this method is called when your extension is deactivated
