@@ -3,6 +3,7 @@
 
 A simple SQL Formatter that supports Doma Framework.
 
+
 ## Links
 - [Marketplace](https://marketplace.visualstudio.com/items?itemName=nagaokayuji.doma-sql-formatter)
 - [Repository](https://github.com/nagaokayuji/doma-sql-formatter-vscode)
@@ -17,6 +18,12 @@ Default keyboard shortcuts:
 - MacOS: **⇧⌥F** or **Shift+Option+F**
 - Windows: **Shift+Alt+F**
 - Linux: **Ctrl+Shift+I**
+
+![formatter](https://user-images.githubusercontent.com/62990385/117654853-47740880-b1d1-11eb-83e6-cb6606196388.gif)
+
+
+### Force Format
+Or you can choose `Doma SQL Formatter: Force Format` to **force format** as SQL.
 
 ## Features
 ### Supported dialects
