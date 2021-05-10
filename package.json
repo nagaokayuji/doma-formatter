@@ -25,7 +25,6 @@
   "main": "./out/extension.js",
   "icon": "static/logo.png",
   "contributes": {
-    "commands": [],
     "configuration": {
       "type": "object",
       "title": "Doma SQL Formatter",
@@ -59,7 +58,14 @@
           "description": "dialect"
         }
       }
-    }
+    },
+    "commands": [
+      {
+        "command": "doma.forceFormat",
+        "title": "Doma SQL Formatter: Force Format",
+        "when": "editorFocus"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "yarn run compile",
