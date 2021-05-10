@@ -4,6 +4,9 @@ All notable changes to the "doma-sql-formatter" extension will be documented in 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 0.0.12
+### Changed
+- Added `Force Format` option.
 ## 0.0.11
 
 ### Changed
