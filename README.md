@@ -1,5 +1,6 @@
 # Doma SQL Formatter 
-![license](https://img.shields.io/github/license/nagaokayuji/doma-sql-formatter-vscode) ![downloads](https://img.shields.io/visual-studio-marketplace/d/nagaokayuji.doma-sql-formatter) ![installs](https://img.shields.io/visual-studio-marketplace/i/nagaokayuji.doma-sql-formatter) ![version](https://img.shields.io/visual-studio-marketplace/v/nagaokayuji.doma-sql-formatter)
+![license](https://img.shields.io/github/license/nagaokayuji/doma-sql-formatter-vscode) 
+![installs](https://img.shields.io/visual-studio-marketplace/i/nagaokayuji.doma-sql-formatter) ![version](https://img.shields.io/visual-studio-marketplace/v/nagaokayuji.doma-sql-formatter)
 
 A simple SQL Formatter that supports Doma Framework.
 
@@ -23,7 +24,8 @@ Default keyboard shortcuts:
 
 
 ### Force Format
-Or you can choose `Doma SQL Formatter: Force Format` to **force format** as SQL.
+You can choose `Doma SQL Formatter: Force Format` to **force format** as SQL.
+
 
 ## Features
 ### Supported dialects
