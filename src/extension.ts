@@ -15,9 +15,8 @@ type TFormattingOptions = {
 
 /** configure format options */
 const getSettings = (options: TFormattingOptions): TConfig => {
-  const settings: vscode.WorkspaceConfiguration = vscode.workspace.getConfiguration(
-    "doma-sql-formatter"
-  );
+  const settings: vscode.WorkspaceConfiguration =
+    vscode.workspace.getConfiguration("doma-sql-formatter");
   return {
     uppercase: settings.get("toUppercase") !== false,
     indent: options.insertSpaces ? " ".repeat(options.tabSize) : "\t",
@@ -51,7 +50,6 @@ export function activate(context: vscode.ExtensionContext) {
         tabSize: editor.options.tabSize as number, // always number
         insertSpaces: editor.options.insertSpaces as boolean, // always boolean
       };
-      console.warn(JSON.stringify(options));
       const range: vscode.Range = new vscode.Range(
         0,
         0,
